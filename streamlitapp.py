@@ -48,7 +48,6 @@ fig2 = px.bar(
 st.plotly_chart(fig2) 
 
 
-# Display the chart in Streamlit
 fig4 = px.scatter(
     dataset, x='total_bill', y='tip', color='sex',
     title='total bill vs tip (colored by gender)',
