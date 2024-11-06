@@ -45,7 +45,10 @@ fig2 = px.bar(
     labels={'tip': 'Average Tip ($)', 'day': 'Day of the Week'},
     template='plotly_white'
 )
-st.plotly_chart(fig2)  # Display the chart in Streamlit
+st.plotly_chart(fig2) 
+
+
+# Display the chart in Streamlit
 fig4 = px.scatter(
     dataset, x='total_bill', y='tip', color='sex',
     title='total bill vs tip (colored by gender)',
@@ -62,6 +65,7 @@ fig5 = px.box(
     template='plotly_white', #clean white background
 )
 fig5.show()
+
 fig6 = px.histogram(
     dataset, x='day' , y='tip', color='day',
     title=' Tip distribution by day',
